@@ -16,7 +16,7 @@
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.google.android.samples.instantdynamicfeatures">
+    package="com.chenglei.android.samples.instantdynamicfeatures">
 
     <!-- The dist:instant="true" makes this module instant enabled. Assuming the "app" module is
         also instant enabled, when this bundle is uploaded to the instant track on the
@@ -32,7 +32,7 @@
     </dist:module>
 
     <application>
-        <activity android:name="com.google.android.samples.instantdynamicfeatures.SplitInstallInstantActivity"></activity>
+        <activity android:name="com.chenglei.android.samples.instantdynamicfeatures.SplitInstallInstantActivity"></activity>
     </application>
 
 </manifest>

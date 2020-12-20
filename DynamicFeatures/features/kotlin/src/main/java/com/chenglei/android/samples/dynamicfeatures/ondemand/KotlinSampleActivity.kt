@@ -14,15 +14,17 @@
  * limitations under the License.
  */
 
-package com.chenglei.samples.instantdynamicfeatures
+package com.chenglei.android.samples.dynamicfeatures.ondemand
 
 import android.os.Bundle
 import com.chenglei.android.samples.dynamicfeatures.BaseSplitActivity
+import com.chenglei.android.samples.dynamicfeatures.ondemand.kotlin.R
 
-class UrlInstantModuleActivity : BaseSplitActivity() {
+/** A simple Activity displaying some text, written in Kotlin. */
+class KotlinSampleActivity : BaseSplitActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_url_instant_module)
+        setContentView(R.layout.activity_feature_kotlin)
     }
 }

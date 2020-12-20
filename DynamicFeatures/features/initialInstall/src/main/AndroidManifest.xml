@@ -16,7 +16,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.google.android.samples.dynamicfeatures.initialinstall">
+    package="com.chenglei.android.samples.dynamicfeatures.initialinstall">
 
     <dist:module
         dist:title="@string/module_initial">
@@ -27,7 +27,7 @@
     </dist:module>
 
     <application>
-        <activity android:name="com.google.android.samples.dynamicfeatures.InitialInstallActivity">
+        <activity android:name="com.chenglei.android.samples.dynamicfeatures.InitialInstallActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>

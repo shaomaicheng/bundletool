@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.chenglei.samples.instantdynamicfeatures
+package com.chenglei.android.samples.instantdynamicfeatures
 
 import android.os.Bundle
 import com.chenglei.android.samples.dynamicfeatures.BaseSplitActivity
 
-class UrlInstantModuleActivity : BaseSplitActivity() {
+class SplitInstallInstantActivity : BaseSplitActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_url_instant_module)
+        setContentView(R.layout.activity_split_install_instant)
     }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Google LLC.
+ * Copyright 2018 Google LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,19 @@
 
 package com.chenglei.android.samples.dynamicfeatures
 
-import android.os.Bundle
-import com.chenglei.android.samples.dynamicfeatures.initialinstall.R
+import android.content.Context
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.play.core.splitcompat.SplitCompat
 
-/** This is a simple Activity. */
-class InitialInstallActivity : BaseSplitActivity() {
+/**
+ * This base activity unifies calls to attachBaseContext as described in:
+ * https://developer.android.com/guide/app-bundle/playcore#invoke_splitcompat_at_runtime
+ */
+abstract class BaseSplitActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_initial_install)
+    override fun attachBaseContext(newBase: Context) {
+        val ctx = LanguageHelper.getLanguageConfigurationContext(newBase)
+        super.attachBaseContext(ctx)
+        SplitCompat.installActivity(this)
     }
 }

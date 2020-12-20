@@ -14,15 +14,17 @@
  * limitations under the License.
  */
 
-package com.chenglei.samples.instantdynamicfeatures
+package com.chenglei.android.samples.dynamicfeatures.ondemand
 
 import android.os.Bundle
 import com.chenglei.android.samples.dynamicfeatures.BaseSplitActivity
+import com.chenglei.android.samples.dynamicfeatures.ondemand.maxsdk.R
 
-class UrlInstantModuleActivity : BaseSplitActivity() {
+/** A basic Activity displaying some text. */
+class MaxSdkSampleActivity : BaseSplitActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_url_instant_module)
+        setContentView(R.layout.activity_feature_maxsdk)
     }
 }

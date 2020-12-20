@@ -14,15 +14,21 @@
  * limitations under the License.
  */
 
-package com.chenglei.samples.instantdynamicfeatures
+package com.chenglei.android.samples.dynamicfeatures.ondemand;
 
-import android.os.Bundle
-import com.chenglei.android.samples.dynamicfeatures.BaseSplitActivity
+import android.os.Bundle;
+import com.chenglei.android.samples.dynamicfeatures.BaseSplitActivity;
+import com.chenglei.android.samples.dynamicfeatures.ondemand.java.R;
 
-class UrlInstantModuleActivity : BaseSplitActivity() {
+import androidx.annotation.Nullable;
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_url_instant_module)
+/** A simple activity displaying text written in Java. */
+public class JavaSampleActivity extends BaseSplitActivity {
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_feature_java);
     }
+
 }
