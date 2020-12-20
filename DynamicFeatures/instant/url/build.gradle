@@ -27,6 +27,10 @@ android {
         targetSdkVersion versions.targetSdk
         vectorDrawables.useSupportLibrary = true
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {

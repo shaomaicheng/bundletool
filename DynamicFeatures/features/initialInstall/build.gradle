@@ -21,6 +21,11 @@ android {
 
     compileSdkVersion versions.compileSdk
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     defaultConfig {
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk

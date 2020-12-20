@@ -18,6 +18,10 @@ apply plugin: 'com.android.dynamic-feature'
 apply plugin: 'kotlin-android'
 
 android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 
     compileSdkVersion versions.compileSdk
 

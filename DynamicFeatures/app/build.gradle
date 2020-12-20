@@ -58,6 +58,11 @@ android {
         targetCompatibility = '1.8'
     }
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     dynamicFeatures = [':features:kotlin',
                        ':features:initialInstall',
                        ':features:java',

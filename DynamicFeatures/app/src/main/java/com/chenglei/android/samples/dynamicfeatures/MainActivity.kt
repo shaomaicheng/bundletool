@@ -379,9 +379,9 @@ fun MainActivity.toastAndLog(text: String) {
     Log.d(TAG, text)
 }
 
-private const val PACKAGE_NAME = "com.google.android.samples.dynamicfeatures"
+private const val PACKAGE_NAME = "com.chenglei.android.samples.dynamicfeatures"
 private const val PACKAGE_NAME_ONDEMAND = "$PACKAGE_NAME.ondemand"
-private const val INSTANT_PACKAGE_NAME = "com.google.android.samples.instantdynamicfeatures"
+private const val INSTANT_PACKAGE_NAME = "com.chenglei.android.samples.instantdynamicfeatures"
 private const val KOTLIN_SAMPLE_CLASSNAME = "$PACKAGE_NAME_ONDEMAND.KotlinSampleActivity"
 private const val JAVA_SAMPLE_CLASSNAME = "$PACKAGE_NAME_ONDEMAND.JavaSampleActivity"
 private const val NATIVE_SAMPLE_CLASSNAME = "$PACKAGE_NAME_ONDEMAND.NativeSampleActivity"

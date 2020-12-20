@@ -19,6 +19,11 @@ apply plugin: 'kotlin-android'
 
 android {
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     compileSdkVersion versions.compileSdk
 
     defaultConfig {
